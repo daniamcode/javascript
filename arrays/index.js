@@ -22,7 +22,12 @@ if(container) {
 }
 
 // operations
-const filteredColors = colors.filter(color => color[0] === 'g')
+// we do it in a function so we can test it easily, and it cannot be an arroy function by now because there's no Babel
+function filterColors(colors) {
+    const result = colors.filter(color => color[0] === 'g')
+    return result
+}
+const filteredColors = filterColors(colors)
 
 // print
 filteredColors.forEach(filteredColor => {
@@ -62,4 +67,4 @@ if(container) {
 
 // ----------------------------------------------------------------------------------------------
 
-module.exports = { filteredColors };
+module.exports = { filterColors };
