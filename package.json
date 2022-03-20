@@ -1,0 +1,16 @@
+{
+  "name": "javascript",
+  "description": "Learning javascript through examples",
+  "authors": "Dani Alcalà Mund",
+  "version": "1.0.0",
+  "main": "pathToMain",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
