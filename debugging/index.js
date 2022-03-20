@@ -22,3 +22,11 @@ couples = {males: ['John', 'Paul', 'Martin', 'Mike'], females: ['Martha', 'Maria
 console.table(couples)
 
 // ---------------------------------------------------------------------------------
+
+// we can always add a try catch in any line of code to know more about an error
+try {
+    const a = 5
+    a = 7
+} catch(error) {
+    console.log(error) // expected TypeError: Assignment to constant variable.
+}
