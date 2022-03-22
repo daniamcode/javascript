@@ -1,0 +1,1 @@
+// see JSON.stringify, deepClone, copy = {...original}, Object.assign(), etc
