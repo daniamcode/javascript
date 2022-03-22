@@ -1,5 +1,5 @@
 # javascript
-A place to test all kind of javascript features
+A place to test all kind of vanilla javascript features
 
 To check the code, just:  
 1.Install Live Server extension in VS Code  
