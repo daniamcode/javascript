@@ -6,10 +6,13 @@ container = document.getElementById("container")
 const fruits = ['banana', 'mango', 'Apple', 'Melon', 'strawberry', 'pear', 'Pineapple']
 // the sort method mutates the original array, so we don't need to use the returned value 
 // (but we could, as it returns the sorted array)
+
+// operations
 const sortedFruits = fruits.sort(function (a, b) {
     return a.toLowerCase().localeCompare(b.toLowerCase());
 })
 
+// print
 const fruitsElement = document.createElement('div')
 fruitsElement.innerHTML = fruits
 container.appendChild(fruitsElement)
@@ -30,12 +33,14 @@ const accounts = [
     { id: 6, accountName: 'Repsol', contract: 2006 }
 ]
 
+// operations
 const sortedAccounts = accounts.sort(function(a, b) {
     var textA = a.accountName.toUpperCase();
     var textB = b.accountName.toUpperCase();
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
 });
 
+// print
 console.log(accounts)
 
 const accountsElement = document.createElement('div')
