@@ -22,8 +22,8 @@ if(container) {
 }
 
 // operations
-// we do it in a function so we can test it easily, and it cannot be an arroy function by now because there's no Babel
-function filterColors(colors) {
+// we do it in a function so we can test it easily
+export const filterColors = (colors) => {
     const result = colors.filter(color => color[0] === 'g')
     return result
 }
@@ -66,5 +66,3 @@ if(container) {
 }
 
 // ----------------------------------------------------------------------------------------------
-
-module.exports = { filterColors };

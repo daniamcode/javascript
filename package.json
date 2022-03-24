@@ -5,6 +5,9 @@
   "version": "1.0.0",
   "main": "pathToMain",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
     "jest": "^27.5.1"
   },
   "scripts": {
@@ -12,5 +15,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "toastr": "^2.1.4"
   }
 }

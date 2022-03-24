@@ -1,9 +1,6 @@
-// imports require Babel, because they belong to ES6
-// if we want to test things like arrow functions we will need to add Babel
-const { filterColors } = require('./index.js');
-// import { filteredColors } from './index.js'
+import { filterColors } from './index.js'
 
-// we also need to add in package.json the following line, because is "node" by default and we are interacting
+// we need to add in package.json the following line, because is "node" by default and we are interacting
 // with the DOM in the files that we are testing:
 
 // "jest": {

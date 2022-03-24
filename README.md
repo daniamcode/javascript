@@ -8,4 +8,8 @@ To check the code, just:
 ## Tests
 We add a package.json because we need the Jest package.
 Tests can be run jut typing "npm test"
-We will need to add Babel in order to test arrow functions and code belonging to ES6
+
+## Babel
+We need Babel to use recent JS features such as imports
+1) npm i --save-dev @babel/core @babel/cli @babel/preset-env
+2) Create a config file named babel.config.json with some presets
