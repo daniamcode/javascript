@@ -1,1 +1,0 @@
-do test that the toastr is shown correctly
