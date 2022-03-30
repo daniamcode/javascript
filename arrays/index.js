@@ -66,3 +66,36 @@ if(container) {
 }
 
 // ----------------------------------------------------------------------------------------------
+
+// FINDINDEX
+
+const index = colors.findIndex(color => color==='green')
+console.log(index) // expected result is 3
+
+// ----------------------------------------------------------------------------------------------
+
+// SOME
+
+let someColors = colors.some(color=>color.includes('ee'))
+console.log('Method "some", if some element satisfies a condition:')
+console.log(someColors); // expect true
+
+someColors = colors.some(color=>color.includes('eee'))
+console.log('Method "some", if any element satisfies a condition:')
+console.log(someColors); // expect false
+
+// ----------------------------------------------------------------------------------------------
+
+// EVERY
+
+let everyColor = colors.every(color=>color.includes('ee'))
+console.log("Method 'every', if some element doesn't satisfy a condition:")
+console.log(everyColor); // expect false
+
+everyColor = colors.every(color=>color.length > 1)
+console.log("Method 'every', if every element satisfies a condition:")
+console.log(everyColor); // expect true
+
+// ----------------------------------------------------------------------------------------------
+
+// to do splice, push, map, forEach and reduce
