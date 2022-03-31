@@ -2,7 +2,7 @@ const container = document.getElementById('container')
 
 // add title
 const mainTitle = document.createElement('h2')
-mainTitle.innerHTML = 'Testing array mehods:' 
+mainTitle.textContent = 'Testing array mehods:' 
 // these if statements are here to pass the test, that hasn't a mocked html by now
 if(container) {
     container.appendChild(mainTitle)
@@ -16,7 +16,7 @@ const colors = ['red', 'blue', 'grey', 'green', 'yellow']
 // FILTER
 // add title
 const filterTitle = document.createElement('h4')
-filterTitle.innerHTML = 'Results of FILTER method:' 
+filterTitle.textContent = 'Results of FILTER method:' 
 if(container) {
     container.appendChild(filterTitle)
 }
@@ -32,7 +32,7 @@ const filteredColors = filterColors(colors)
 // print
 filteredColors.forEach(filteredColor => {
     const item = document.createElement('div')
-    item.innerHTML = filteredColor
+    item.textContent = filteredColor
     if(container) {
         container.appendChild(item)
     } 
@@ -43,7 +43,7 @@ filteredColors.forEach(filteredColor => {
 // FIND
 // add title
 const findTitle = document.createElement('h4')
-findTitle.innerHTML = 'Results of FIND method:'
+findTitle.textContent = 'Results of FIND method:'
 if(container) {
     container.appendChild(findTitle)
 }
@@ -54,7 +54,7 @@ let notFoundColor = colors.find(color => color === 'efefwewefwe')
 
 // print
 const foundColorElement = document.createElement('div')
-foundColorElement.innerHTML = foundColor
+foundColorElement.textContent = foundColor
 if(container) {
     container.appendChild(foundColorElement)
 }
